@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "4e86764c2b1a2dd9bcbca87cfb77da31",
+  "content-hash": "04f83f0b8d8de1644cca47f08c9793b1",
   "packages": [
     {
       "name": "brick/math",
@@ -15,16 +15,16 @@
         "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
-                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+        "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "php": "^7.4 || ^8.0"
+      },
+      "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^9.0",
                 "vimeo/psalm": "4.25.0"
@@ -2194,26 +2194,114 @@
                 },
                 {
                     "url": "https://github.com/nunomaduro",
-                    "type": "github"
+                  "type": "github"
                 },
-                {
-                    "url": "https://github.com/xiCO2k",
-                    "type": "github"
-                }
+              {
+                "url": "https://github.com/xiCO2k",
+                "type": "github"
+              }
             ],
-            "time": "2023-02-08T01:06:31+00:00"
+          "time": "2023-02-08T01:06:31+00:00"
+        },
+    {
+      "name": "owen-it/laravel-auditing",
+      "version": "v13.5.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/owen-it/laravel-auditing.git",
+        "reference": "f7da93ef11a28a6dc656168d0479a37bd3843b59"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/owen-it/laravel-auditing/zipball/f7da93ef11a28a6dc656168d0479a37bd3843b59",
+        "reference": "f7da93ef11a28a6dc656168d0479a37bd3843b59",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "illuminate/console": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/filesystem": "^7.0|^8.0|^9.0|^10.0",
+        "php": "^7.3|^8.0"
+      },
+      "require-dev": {
+        "laravel/legacy-factories": "*",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^9.0"
+      },
+      "suggest": {
+        "laravelista/lumen-vendor-publish": "Needed to publish the package configuration in Lumen"
+      },
+      "type": "package",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "v13-dev"
+        },
+        "laravel": {
+          "providers": [
+            "OwenIt\\Auditing\\AuditingServiceProvider"
+          ]
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "OwenIt\\Auditing\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Antério Vieira",
+          "email": "anteriovieira@gmail.com"
         },
         {
-            "name": "phpoption/phpoption",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
+          "name": "Raphael França",
+          "email": "raphaelfrancabsb@gmail.com"
+        },
+        {
+          "name": "Morten D. Hansen",
+          "email": "morten@visia.dk"
+        }
+      ],
+      "description": "Audit changes of your Eloquent models in Laravel/Lumen",
+      "homepage": "http://laravel-auditing.com",
+      "keywords": [
+        "Accountability",
+        "Audit",
+        "auditing",
+        "changes",
+        "eloquent",
+        "history",
+        "laravel",
+        "log",
+        "logging",
+        "lumen",
+        "observer",
+        "record",
+        "revision",
+        "tracking"
+      ],
+      "support": {
+        "issues": "https://github.com/owen-it/laravel-auditing/issues",
+        "source": "https://github.com/owen-it/laravel-auditing"
+      },
+      "time": "2023-03-17T11:39:04+00:00"
+    },
+    {
+      "name": "phpoption/phpoption",
+      "version": "1.9.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/schmittjoh/php-option.git",
+        "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/dd3a383e599f49777d8b628dadbb90cae435b87e",
                 "reference": "dd3a383e599f49777d8b628dadbb90cae435b87e",
                 "shasum": ""
             },

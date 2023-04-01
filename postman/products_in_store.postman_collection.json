@@ -1,0 +1,610 @@
+{
+  "info": {
+    "_postman_id": "38cf5c85-9945-4b27-9d34-c7c9e77e6124",
+    "name": "products_in_store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17330958"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"clare72@example.org\",\n    \"password\": \"password\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "User list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/users",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Single User",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/users/2",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create user",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"first_name\": \"Joan\",\n    \"last_name\": \"Kuhn\",\n    \"email\": \"hosea.lockman3@example.com\",\n    \"password\": \"secret123\",\n    \"password_confirmation\": \"secret123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/users",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"first_name\": \"Joan\",\n    \"last_name\": \"Kuhn\",\n    \"email\": \"hosea.lockman120@example.com\",\n    \"password\": \"secret123\",\n    \"password_confirmation\": \"secret123\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/users/9",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Users",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/users/9",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users",
+                "9"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Shop",
+      "item": [
+        {
+          "name": "Shop list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/users",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Single Shop",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/shops/2",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "shops",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create shop",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"My shop\",\n    \"address\": \"Warsaw, Metro Politechnika\",\n    \"latitude\": \"52.21780060405088\",\n    \"longitude\": \"21.014364109050398\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/shops",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "shops"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Shop",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"My shop point\",\n    \"address\": \"Warsaw, Metro Politechnika\",\n    \"latitude\": \"52.21780060405088\",\n    \"longitude\": \"21.014364109050398\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/shops/25",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "shops",
+                "25"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Shop",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/shops/25",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "shops",
+                "25"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Product list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/products",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Single Product",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/products/455",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "products",
+                "455"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"My product\",\n    \"ean\": 7880046206269,\n    \"sku\": \"pl3213\",\n    \"shop_id\": 1,\n    \"product_groups_ids\": [1,2,4]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/products",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"My product\",\n    \"ean\": 7880046206269,\n    \"sku\": \"pl123\",\n    \"shop_id\": 1,\n    \"product_groups_ids\": [1,52,455]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0/api/products/4500",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "products",
+                "4500"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/products/4500",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "products",
+                "4500"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Weather",
+      "item": [
+        {
+          "name": "Product list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://0.0.0.0/api/weather/shop/13",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "path": [
+                "api",
+                "weather",
+                "shop",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "1|OfPpwmnCG3BCNneD9uE6YuXWQE57rbrnV5Jlugzp",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
